@@ -1,5 +1,5 @@
 // src/server.js
-require('dotenv').config(); // Load environment variables
+//require('dotenv').config(); // Load environment variables
 
 // We want to gracefully shutdown our server
 const stoppable = require('stoppable');
