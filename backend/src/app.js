@@ -32,12 +32,13 @@ const app = express();
 app.use(pino);
 app.use(helmet());
 
-// CORS configuration for production
+// CORS configuration for production and development
 const corsOptions = {
-  origin:
-    process.env.NODE_ENV === 'production'
-      ? ['https://shoescout-723a.onrender.com'] // Update this with your actual Netlify URL
-      : ['http://localhost:5173', 'http://localhost:3000'],
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:8080',
+    'https://shoescout.netlify.app/' // frontend (Vite)
+  ],
   credentials: true,
   optionsSuccessStatus: 200,
 };
