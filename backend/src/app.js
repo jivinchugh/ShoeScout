@@ -37,7 +37,7 @@ const corsOptions = {
   origin: [
     'http://localhost:5173',
     'http://localhost:8080',
-    'https://shoescout.netlify.app/' // frontend (Vite)
+    'https://shoescout.netlify.app' // frontend (Vite)
   ],
   credentials: true,
   optionsSuccessStatus: 200,
